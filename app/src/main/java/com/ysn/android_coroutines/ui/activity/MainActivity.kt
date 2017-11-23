@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.view.View
 import android.widget.Toast
 import com.ysn.android_coroutines.R
 import com.ysn.android_coroutines.experimental.Android
@@ -40,7 +39,7 @@ class MainActivity : AppCompatActivity(), PostClickListener {
         super.onResume()
         launch (Android) {
             try {
-                val result = SampleClient.fetchPosts()
+                val result = SampleClient.fetchPostsWithCoroutines()
 
                 // Will suspend until the call is finished
                 postAdapter.setElements(result.await())
