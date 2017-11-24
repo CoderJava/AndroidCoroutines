@@ -24,7 +24,7 @@ object SampleClient {
 
     fun fetchPostsWithCoroutines(): Deferred<List<Post>> {
         return async(CommonPool) {
-            delay(500)
+            delay(5000)
             val request = Request.Builder()
                     .url("https://jsonplaceholder.typicode.com/posts")
                     .build()

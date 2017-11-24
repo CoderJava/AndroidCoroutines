@@ -6,10 +6,36 @@
     android:layout_height="match_parent"
     tools:context="com.ysn.android_coroutines.ui.activity.MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_okhttp_activity_main"
+        android:text="@string/okhttp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_retrofit_activity_main"
+        android:text="@string/retrofit"
+        android:layout_toRightOf="@+id/button_okhttp_activity_main"
+        android:layout_toEndOf="@+id/button_okhttp_activity_main"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_post_list_activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/button_okhttp_activity_main"
         android:scrollbars="vertical" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
 </RelativeLayout>

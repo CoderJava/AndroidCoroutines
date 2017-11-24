@@ -25,12 +25,31 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.19.3'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
+
+    /** Library support for Kotlin Coroutines */
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.19.3'
+
+    /** An HTTP+HTTP/2 client for Android and java applications */
     implementation 'com.squareup.okhttp3:okhttp:3.9.0'
+
+    /** Type-safe HTTP client for Android and Java by Square */
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    /** A Java serialization/deserialization library to convert Java Objects into JSON and back */
     implementation 'com.google.code.gson:gson:2.8.2'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    /**
+     * Reactive Extensions for JVM - a library for composing asynchronous and event-based programs
+     * using observable sequences for the Java VM
+     */
     implementation 'io.reactivex.rxjava2:rxjava:2.1.6'
+
+    /** RxJava bindings for Android */
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    /** Testing Framework */
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

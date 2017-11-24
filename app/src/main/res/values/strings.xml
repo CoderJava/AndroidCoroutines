@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android-Coroutines</string>
+    <string name="okhttp">OkHttp</string>
+    <string name="retrofit">Retrofit</string>
 </resources>
